@@ -8,7 +8,7 @@
     int i,j;
     for(i=0; i<3; i++)  
     {
-    	printf("STRINGS: \n");                                                          //en baþtaki for'un süslü parantezine dikkat!
+    	printf("STRINGS: \n");                                                          //en baÃ¾taki for'un sÃ¼slÃ¼ parantezine dikkat!
     	printf("%s\n" ,table3[i]);
     	printf("TABLE1\n");
     	
@@ -37,7 +37,7 @@ void fillMatrix(int table[][3],int row,int col)
 			if(i<j)
 			table[i][j]=-1;
 			else if(i==j)
-			table[i][j]=0;                  //Yalnýzca j deðerleri artar çünkü henüz j fonksiyondan çýkmadý.
+			table[i][j]=0;                  //YalnÃ½zca j deÃ°erleri artar Ã§Ã¼nkÃ¼ henÃ¼z j fonksiyondan Ã§Ã½kmadÃ½.
 			else
 			table[i][j]=1;
 		}
@@ -46,14 +46,14 @@ void fillMatrix(int table[][3],int row,int col)
 
 void printingMatrix(int table[][3], int row,int col)
 {
-	int i,j;                                            //Bu ksýýmda sadece yazdýrma iþlemini yaptýk
+	int i,j;                                            //Bu ksÃ½Ã½mda sadece yazdÃ½rma iÃ¾lemini yaptÃ½k
 	for(i=0; i<row; i++)
 	{
 	  for(j=0; j<col; j++)
 	  {
 	  	printf("%d\t",table[i][j]);
       }	
-        printf("\n");                   //Alt alta yazdýrmak için kullandýk.
+        printf("\n");                   //Alt alta yazdÃ½rmak iÃ§in kullandÃ½k.
 	}
 }
 
