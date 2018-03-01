@@ -26,18 +26,18 @@ int x = 5;
 int *p;
 
 p = &x;
-printf("The address of %p\n", &x);       //x'in adresine erişti
-printf("The value of p %p\n", p);        //p değerinin x'in adresine erişmesini istemiştik
-printf("The value of x is %d\n",x);      //x'in değeri
-printf("The value of x is %d accessed by dereferencing \n ",*p);       //p değeri x'in adresine erişmişti.Xin adresine gittiğimizde x'in değerini buluruz */
+printf("The address of %p\n", &x);       //x'in adresine eriÃ¾ti
+printf("The value of p %p\n", p);        //p deÃ°erinin x'in adresine eriÃ¾mesini istemiÃ¾tik
+printf("The value of x is %d\n",x);      //x'in deÃ°eri
+printf("The value of x is %d accessed by dereferencing \n ",*p);       //p deÃ°eri x'in adresine eriÃ¾miÃ¾ti.Xin adresine gittiÃ°imizde x'in deÃ°erini buluruz */
 
 /* float a,b,r;
 float *pa=&a, *pb=&b;
 float *pr=&r;
-scanf(" %f",pa);               //scanf'in içine bi şey yazılmaz!
+scanf(" %f",pa);               //scanf'in iÃ§ine bi Ã¾ey yazÃ½lmaz!
 scanf(" %f",pb);
 
-*pr=*pa+*pb;                   //a ve b değerlerinin toplamıdır.
+*pr=*pa+*pb;                   //a ve b deÃ°erlerinin toplamÃ½dÃ½r.
 
 printf("%f\n",*pr);
 printf("%f\n",r);    */
@@ -50,8 +50,8 @@ double *pd1,*pd2;
 printf(" c is %c\n d is %f\n",c,d);
 printf(" pc is %c\n",*pc);
 pd1=&d;                 
-*pc='B';               //Artık c gördüğümüz yerlere B yazıcaz.
-pd2=pd1;               //pd2 d'nin adresine eşit oldu.
+*pc='B';               //ArtÃ½k c gÃ¶rdÃ¼Ã°Ã¼mÃ¼z yerlere B yazÃ½caz.
+pd2=pd1;               //pd2 d'nin adresine eÃ¾it oldu.
 *pd1=*pd2*0.2;         //d=5.43*0.2
 printf(" After \n");
 printf(" c is %c\n d is %f\n *pd1 is %f\n *pd2 is %f\n",c,d,*pd1,*pd2);
