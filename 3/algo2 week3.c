@@ -1,5 +1,5 @@
 #include <stdio.h>
- //buraya bir adet tanımlayıı fonskiyon yazıyorsun!!!!!!!!!! (prototip)
+ //buraya bir adet tanÃ½mlayÃ½Ã½ fonskiyon yazÃ½yorsun!!!!!!!!!! (prototip)
 
 void sorting (int*, int);
 int searching (int *, int, int);
@@ -18,16 +18,16 @@ int main()
 	printf("%d\n",*(++p3)); 
 	
 	p2=p3;
-	printf("%d\n",*p2);       //p2'nin gösterdiği adrese gittiğimizde 220 yazdırır.
-	p1=(array1+5);            //p1imiz 6nın adresi
+	printf("%d\n",*p2);       //p2'nin gÃ¶sterdiÃ°i adrese gittiÃ°imizde 220 yazdÃ½rÃ½r.
+	p1=(array1+5);            //p1imiz 6nÃ½n adresi
 	*p2=*p1+23;               //yeni p2miz 29.
-	printf("%d\n",*(array1+1));      //220 bir üst satırda 29 olarak değişmişti bu yüzden yeni değerimiz 29.
+	printf("%d\n",*(array1+1));      //220 bir Ã¼st satÃ½rda 29 olarak deÃ°iÃ¾miÃ¾ti bu yÃ¼zden yeni deÃ°erimiz 29.
 	
 	
 	
 	int myarray[]={345,125,889,126,54,145,0,14}, size=8, i=0, rtn;
 	sorting(myarray,size);
-	rtn=searching(myarray,size,345);     //345'i bulmasını istiyoruz.
+	rtn=searching(myarray,size,345);     //345'i bulmasÃ½nÃ½ istiyoruz.
 	if(rtn==-1)
 	      printf("It is not in the list \n");
     else 
@@ -53,14 +53,14 @@ void sorting (int * arr, int size)
 		}
 }
 }
-int searching (int *arr, int size, int searched)            //sorting fonksiyonu yapılmadan bu işlem yapılmaz.
+int searching (int *arr, int size, int searched)            //sorting fonksiyonu yapÃ½lmadan bu iÃ¾lem yapÃ½lmaz.
 {
-	int *sp=arr, *lp=(arr+size-1);       //sp 0.indise erişiyor, lp sonuncu indise erişiyor.
+	int *sp=arr, *lp=(arr+size-1);       //sp 0.indise eriÃ¾iyor, lp sonuncu indise eriÃ¾iyor.
 	int *mid;
 	while(sp<=lp)
 	{                                      
-		mid=sp+(lp-sp)/2;               //her zaman mid fonksiyonuna göre işlem yapıyor. aradığımız sayı mid'den büyükse ssağ tarafta işlem yapıyor,
-		if(searched>*mid)                      //küçükse sol tarafta işlem yapıyor.
+		mid=sp+(lp-sp)/2;               //her zaman mid fonksiyonuna gÃ¶re iÃ¾lem yapÃ½yor. aradÃ½Ã°Ã½mÃ½z sayÃ½ mid'den bÃ¼yÃ¼kse ssaÃ° tarafta iÃ¾lem yapÃ½yor,
+		if(searched>*mid)                      //kÃ¼Ã§Ã¼kse sol tarafta iÃ¾lem yapÃ½yor.
 			sp=mid+1;
 		else if(searched<*mid)
 			lp=mid-1;
