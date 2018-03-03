@@ -2,7 +2,7 @@
 
 void func()
 {
-	static int i=5;  //static olduğu için sadece bir kere tanımlanıp çalışır.
+	static int i=5;  //static olduÃ°u iÃ§in sadece bir kere tanÃ½mlanÃ½p Ã§alÃ½Ã¾Ã½r.
 	i++;
 	printf("i= %d\n" ,i);
 	
