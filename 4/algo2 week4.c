@@ -40,26 +40,26 @@ int main(void)
 	
 	
 	
-	void *p;                                          //pointer'ımızı void olarak oluşturduk çünkü generic pointer kullanıcaz.
+	void *p;                                          //pointer'Ã½mÃ½zÃ½ void olarak oluÃ¾turduk Ã§Ã¼nkÃ¼ generic pointer kullanÃ½caz.
 	int i=7;
 	float f=23.4;                                       
 	p=&i;
-	printf("i=%d\n",*((int*)p));                     //başta pointera bi tip vermedik. Burda int olmasını istiyoruz. Gösterim bu şekilde.
+	printf("i=%d\n",*((int*)p));                     //baÃ¾ta pointera bi tip vermedik. Burda int olmasÃ½nÃ½ istiyoruz. GÃ¶sterim bu Ã¾ekilde.
 	*(int*)p=i+5;
 	printf("i=%d\n",*((int*)p));
 	p=&f;
 	*(float*)p=365.5;
-	printf("f=%f\n",*(float*)p);                       //Şimdiyse aynı pointer'ın float olmasını istiyoruz
+	printf("f=%f\n",*(float*)p);                       //Ãimdiyse aynÃ½ pointer'Ã½n float olmasÃ½nÃ½ istiyoruz
 	printf("i is %d\n",i);
 	
 	
 	double val=9.7;
 	double array[]={3.2,4.3,5.4};
-	double *pdbl[2];               //2 elemanlı double pointer tutan bir dizi
+	double *pdbl[2];               //2 elemanlÃ½ double pointer tutan bir dizi
 	int a[][4]={{9,8,7,6},{13,15,17,19},{21,23,25,27}};
-	int *pa[3],(*pb)[4];          //pa 3 elemanlı int  pointer tutan dizi,pb 4 elemanlı dizi tutan pointer
+	int *pa[3],(*pb)[4];          //pa 3 elemanlÃ½ int  pointer tutan dizi,pb 4 elemanlÃ½ dizi tutan pointer
 	pdbl[0]=&val;
-	pdbl[1]=array+1;           //array dediğimizde dizinin ilk elemanını alır çünkü dizi oluşturmak aslında ilk elemanın adresini tutup arka arkaya sıralamaktır.
+	pdbl[1]=array+1;           //array dediÃ°imizde dizinin ilk elemanÃ½nÃ½ alÃ½r Ã§Ã¼nkÃ¼ dizi oluÃ¾turmak aslÃ½nda ilk elemanÃ½n adresini tutup arka arkaya sÃ½ralamaktÃ½r.
 	printf("*pdbl[0]=%lf\t *pdbl[1]=%lf\n\n",*pdbl[0],*pdbl[1]);
 	
 	pa[0]=a[1];                
