@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include<stdlib.h>               //dinamik bellek kütüphanesi
+#include<stdlib.h>               //dinamik bellek kÃ¼tÃ¼phanesi
 
 int main()
 {
 int* p,* ary;
 	int i;
 		
-	p=(int*)malloc(sizeof(int));              //dizinin boyutunu istediðimiz gibi deðiþtirmek için malloc kullanýrýz.         
+	p=(int*)malloc(sizeof(int));              //dizinin boyutunu istediÃ°imiz gibi deÃ°iÃ¾tirmek iÃ§in malloc kullanÃ½rÃ½z.         
 	
 	if(!p)
 	 exit(-1);
@@ -20,7 +20,7 @@ int* p,* ary;
 	printf("istediginiz sayiyi girin\n");
 	scanf("%d\n",&a);
 	
-	ary=(int*)calloc(10,sizeof(int)*a);                               //calloc malloctan farklý olarak iki parametre alýr
+	ary=(int*)calloc(10,sizeof(int)*a);                               //calloc malloctan farklÃ½ olarak iki parametre alÃ½r
 	if(!ary)
 	  exit(-1);	
 	for(i=0; i<10; i++)
@@ -31,7 +31,7 @@ int* p,* ary;
 
 	
 	
-	ary=(int*)realloc(ary,sizeof(int)*20);                     //daha önce oluþturduðumuz calloc fonksiyonunu geniþletmek için realloc kullandýk
+	ary=(int*)realloc(ary,sizeof(int)*20);                     //daha Ã¶nce oluÃ¾turduÃ°umuz calloc fonksiyonunu geniÃ¾letmek iÃ§in realloc kullandÃ½k
 	
 		if(!ary)
 	  exit(-1);
@@ -39,7 +39,7 @@ int* p,* ary;
 	
 	
 	                                               
-	free(p);                           //dinamik deðiþkenlerimizi ram'e iade ettik.
+	free(p);                           //dinamik deÃ°iÃ¾kenlerimizi ram'e iade ettik.
 	free(ary);
 	
    /*	int *p,i;                     
@@ -50,7 +50,7 @@ int* p,* ary;
 	  
 	for(i=0; i<4; i++)
 	{
-		scanf("%d",p);                           //kullanýcýdan 4 sayý isteyecek ve her bir sayýyý 4 ile çarpýp yazdýrýcak.
+		scanf("%d",p);                           //kullanÃ½cÃ½dan 4 sayÃ½ isteyecek ve her bir sayÃ½yÃ½ 4 ile Ã§arpÃ½p yazdÃ½rÃ½cak.
 		*p=4*(*p);
 		printf("%d\n",*p);
 		p++;
@@ -65,7 +65,7 @@ int* p,* ary;
 	int k;
 	printf("How many character you will input\n");
 	scanf("%d",&k);
-	p=(char*)calloc(k+1,sizeof(char));     //stringi bitirmek için \0 komutunu kullanýcak. Bu yüzden bir eleman fazla dizi oluþturmasýný istedim(k+1)
+	p=(char*)calloc(k+1,sizeof(char));     //stringi bitirmek iÃ§in \0 komutunu kullanÃ½cak. Bu yÃ¼zden bir eleman fazla dizi oluÃ¾turmasÃ½nÃ½ istedim(k+1)
 	
 	if(!p)
 	 exit(-1);
@@ -75,7 +75,7 @@ int* p,* ary;
    printf("Enter a word with size \n");
    scanf("%s",p);
    printf("You entered\n");
-   printf("%s\n",p);                 //%s kullandýðýn için *p yazmana gerek yok p yazman yeterli
+   printf("%s\n",p);                 //%s kullandÃ½Ã°Ã½n iÃ§in *p yazmana gerek yok p yazman yeterli
    
    
    free(p);*/
