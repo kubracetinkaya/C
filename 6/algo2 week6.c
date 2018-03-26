@@ -36,7 +36,7 @@ int main()
 typedef struct                                        
     {
     	char id[11];
-    	char name[10];                               //Bir struct oluşturdum ve adı STUDENT
+    	char name[10];                               //Bir struct oluÃ¾turdum ve adÃ½ STUDENT
     	int grade;
 	}
 	STUDENT;
@@ -44,10 +44,10 @@ typedef struct
 
 int main()
 {
-STUDENT *spointer;          //STUDENT tipinde bi struct oluşturduk. int char gibi düşün.Ve bu yapı
-/*spointer=&std1;                                                                    //içinde farklı tipte değişkenler tutuyor.
-printf("%s %s %d\n",(*spointer).id,(*spointer).name,(*spointer).grade);           //  .ile erişmek istiyorsan pointer'ı yıldızla göster.
-printf("%s %s %d\n",spointer->id,spointer->name,spointer->grade);                 //-> ile erişmek istiyorsan *a gerek yok.
+STUDENT *spointer;          //STUDENT tipinde bi struct oluÃ¾turduk. int char gibi dÃ¼Ã¾Ã¼n.Ve bu yapÃ½
+/*spointer=&std1;                                                                    //iÃ§inde farklÃ½ tipte deÃ°iÃ¾kenler tutuyor.
+printf("%s %s %d\n",(*spointer).id,(*spointer).name,(*spointer).grade);           //  .ile eriÃ¾mek istiyorsan pointer'Ã½ yÃ½ldÃ½zla gÃ¶ster.
+printf("%s %s %d\n",spointer->id,spointer->name,spointer->grade);                 //-> ile eriÃ¾mek istiyorsan *a gerek yok.
 */	
 	int std2,i;
 	printf("How many students:\n");
