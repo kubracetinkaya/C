@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef enum                     //enum yapısı aslında int değrelerdir
+typedef enum                     //enum yapÄ±sÄ± aslÄ±nda int deÄŸrelerdir
 {
 	bay,   //0
 	bayan  //1
 }cinsiyet;
 
-typedef enum                //enum yapisi çıktıda int değrler olarak görünür.
+typedef enum                //enum yapisi Ã§Ä±ktÄ±da int deÄŸrler olarak gÃ¶rÃ¼nÃ¼r.
 {
 	pazartesi,  //0
 	sali,       //1
@@ -44,9 +44,9 @@ int main()
 	ali.yas=30;
 	ali.c=bay;
 	ali.tatil=pazartesi;
-	printf("alinin yasi: %d enum cinsiyet: %u enum tatil:%u\n",ali.yas,ali.c,ali.tatil);  //enum yapisi özel olarak %u ile çağırılabilir.
+	printf("alinin yasi: %d enum cinsiyet: %u enum tatil:%u\n",ali.yas,ali.c,ali.tatil);  //enum yapisi Ã¶zel olarak %u ile Ã§aÄŸÄ±rÄ±labilir.
 	printf("velinin yasi: %d\n",veli->yas);
-	printf("ali emekli mi %d\n",emeklimi(&ali));    //ali pointer olmadigi icin adres olarak çağırdım
+	printf("ali emekli mi %d\n",emeklimi(&ali));    //ali pointer olmadigi icin adres olarak Ã§aÄŸÄ±rdÄ±m
 	printf("veli emekli mi %d\n",emeklimi(veli));
 	
 
