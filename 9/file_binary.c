@@ -26,7 +26,7 @@ int main()
 	while(!feof(fp))
 	{
 		printf("%d %s %s %d\n",p1.id,p1.name,p1.team,p1.rank);
-		fread(&p1,sizeof(player),1,fp);          //p1in adresinde playerın boyutu kadar yeri fpden oku
+		fread(&p1,sizeof(player),1,fp);          //p1in adresinde playerÃ½n boyutu kadar yeri fpden oku
 		
 	}
 	
