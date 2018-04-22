@@ -15,7 +15,7 @@ int main()
 		printf("enter id,name,team and rank\n");
 		scanf("%d%s%s%d",&id,&name,&team,&rank);
 		
-		fprintf(fp,"%d %s %s %d\n",id,name,team,rank);                 //ne girersek dosyaya yazıcak.
+		fprintf(fp,"%d %s %s %d\n",id,name,team,rank);                 //ne girersek dosyaya yazÃ½cak.
 		fflush(fp);
 		
 	}
